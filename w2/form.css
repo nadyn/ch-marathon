@@ -1,0 +1,58 @@
+.top, .middle{
+    width: 800px;
+    height: 360px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.bottom{
+    width: 930px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+    background-color: #b5f178;
+}
+.w-100{
+    width: 800px;
+    height: 120px;
+    float: left;
+}
+.w-33{
+    width: 33%;
+    height: 120px;
+    float: left;
+}
+.w-50{
+    width: 400px;
+    height: 120px;
+    float: left;
+}
+.bottom__inner{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+}
+p{
+    font-size: 40px;    
+    margin: 50px;
+}
+.red{
+    background-color: #f10909;
+}
+.green{   
+    background-color: #22b914cc;
+}
+.blue{    
+    background-color: #1923bbcc;
+}
+.yellow{    
+    background-color: #ddb307;
+}
+.grey{
+    background-color:#94969b;
+}
+.black{
+    background-color:#000000;
+}

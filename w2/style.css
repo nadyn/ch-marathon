@@ -1,0 +1,48 @@
+body {
+    left: 386pt;
+    top: 213px;
+    width: 750px;
+    height: 383px;
+    font-size: 15px;
+    line-height: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    }
+h1, h2{
+    margin-bottom: -15px;
+    }
+.logo{
+    width: 642px;
+    height: 116px;
+    background-color: #000000;
+}
+.center-img {
+    display: block;
+    margin: 0 auto;
+  }
+  .right-img{
+    float: right; 
+    margin: 0 0 5px 5px;
+  }
+  .left-img{
+    float: left; 
+    margin: 0 0 5px 5px;
+  }
+  .menu{
+    left: 225pt;
+    top: 213px;
+    width: 125px;
+    height: 207px;
+    font-size: 11px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    float: left;
+  }
+  .sc-menu{
+    left: 376px;
+    top: 210px;
+    float: left;
+    margin: 10px 10px 10px 10px
+  }
