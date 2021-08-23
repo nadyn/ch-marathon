@@ -5,8 +5,9 @@ body{
     font-family: 'Raleway', sans-serif;
     font: 14px;
     color: #868181;
+    -webkit-font-smoothing: antialiased;
 
-    background-color: black;
+    background-color: #97bff3; /* #fff */
 }
 
 *,
@@ -14,6 +15,15 @@ body{
 *:before{
     box-sizing: border-box;
 }
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+p{
+    margin: 0 0 10px;
+}
+
 
 /* Container
 ===========*/
@@ -29,7 +39,13 @@ body{
 ===========*/
 
 .header{
-    
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .headef__inner{
@@ -44,6 +60,7 @@ body{
 ===========*/
 
 .nav{
+    display: flex;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -51,9 +68,92 @@ body{
 
 .nav__link{
     color: #fff;
+    margin-left: 50px;
     text-decoration: none;
+    opacity: .75;
+    transition: opacity .2s linear;
+}
+
+.nav__link:first-child{
+    margin-left: 0;
 }
 
 .nav__link:hover{
-    text-decoration: underline;
+    opacity: 1;
+}
+
+/* Intro
+===========*/
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 100px;
+
+    background: #3e1896 url("img\intro-bg.png") center no-repeat / cover;
+
+}
+
+.intro__inner{
+    
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro__title{
+    margin: 0 0 30px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color:#fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.intro__subtitle{
+    margin-bottom: 60px;
+
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+/* Button
+===========*/
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear;
+}
+
+
+.btn--red{
+    background-color: #e84545;
+}
+
+.btn--red:hover{
+    background-color: #d84545;
 }
